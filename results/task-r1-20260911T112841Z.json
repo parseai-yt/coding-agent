@@ -1,0 +1,76 @@
+[
+ {
+  "model": "claude-sonnet-5",
+  "id": "msg_011CewaD2z6XFSERQRwBvTH6",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "thinking",
+    "thinking": "",
+    "signature": "EswCCpABCBEYAipAHifRyJVnPMH/muahoYjSLcjQcD4CzmSqQP0fnPnRnTKRRKXWhu8NXnJ778dhRSocL/6c5POW8wnK2oTlyPAU4zIPY2xhdWRlLXNvbm5ldC01OABCCHRoaW5raW5nWiQzY2I4YTM4OS1jZTQ2LTRmM2QtYmUzOC03ZTExYjc3MGE0ZmKoAeDLj9UGEgxrJ4yv0Q//N7ID3eUaDJ5kLH8JtupFjoFS1SIwmVNizXHroIORoCAkNETBN1AvSvI0SkUaQGdRWZqSjmO4k0Mf+Yqaa+1shh1AQWC6KmlUqRlLUn9XVNxMZr9NBS6acpPzx1PeZYliyjemSpBYrb3qsRKKKiMx9G2sKju8EUYRcHmhRu2hdiATE69mK9H3Z9LqHdKeCF1esYgOQ4VPCsQZ45InhQcyuRH7vcnvofSzqKcxPGeaq3cYAQ=="
+   },
+   {
+    "type": "tool_use",
+    "id": "toolu_01A268s3ECwwgxKnapQJgZ4i",
+    "name": "read_file",
+    "input": {
+     "path": "bench/record.sh"
+    },
+    "caller": {
+     "type": "direct"
+    }
+   }
+  ],
+  "container": null,
+  "stop_reason": "tool_use",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 466,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 86,
+   "output_tokens_details": {
+    "thinking_tokens": 31
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ },
+ {
+  "model": "claude-sonnet-5",
+  "id": "msg_011CewaDAQ5bVMrkFmjexrQ5",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+   {
+    "type": "text",
+    "text": "## What `bench/record.sh` does\n\nIt's a benchmarking harness that measures **Claude Code's \"tool overhead floor\"** \u2014 how much a task costs/consumes before any real work happens, purely due to which tools are available.\n\n**Core mechanism:**\n1. Sends the same trivial, fixed prompt (`\"Reply with exactly: OK\"`) to `claude -p` repeatedly.\n2. Varies only the tool configuration between runs (via `--allowedTools`/`--disallowedTools`/`--restricted` flags).\n3. Runs from `bench/workdir` \u2014 a directory deliberately free of a project `CLAUDE.md`, so project-level memory doesn't pollute the measurement.\n4. Writes every raw JSON response to `bench/results/raw/`, and appends structured records to `bench/results/runs.jsonl` via `bench/append.py`.\n5. Enforces a hard cost cap (`$4.00` by default) \u2014 it aborts if cumulative `total_cost_usd` across runs exceeds it.\n\n**Usage:**\n```\nbench/record.sh [repeats] [set]\n```\n- `repeats` \u2014 how many times to repeat each config (default 2).\n- `set` \u2014 one of three predefined config groups:\n  - **floor**: compares `all`, `no-web`, `no-edit`, `restricted`, `read-only`, `bash-only`, `read-one`, `none` tool sets.\n  - **decompose**: isolates specific tools (`Bash`, `Task`, combos, restricted-minus-web, etc.) to break down what's driving the floor.\n  - **verify**: a smaller re-check set (`all`, `none`, `bash-only`, `read-only`, `restricted`) presumably to confirm findings from `floor`.\n\n**Design philosophy (per its own comments):**\n- It's intentionally a \"dumb\" recorder \u2014 no interpretation, no reconciliation. It just runs configs and dumps raw output so every number can be traced back to a file on disk (per project conventions in `CLAUDE.md`).\n- Judgment (deciding if an answer was actually correct) is done manually afterward into a `facts.json`.\n- Because a user's *global* `~/.claude/CLAUDE.md` still loads in every run, absolute numbers are machine-specific \u2014 but since it affects all configs equally, it cancels out in **differences between configs**, which is what the script is really designed to let you compare.\n\nIn short: it's a controlled experiment runner for isolating how tool availability alone affects Claude Code's cost/behavior on a no-op task."
+   }
+  ],
+  "container": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+   "input_tokens": 2446,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 840,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "standard",
+   "inference_geo": "global"
+  }
+ }
+]
