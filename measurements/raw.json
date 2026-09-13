@@ -1,0 +1,122 @@
+[
+ {
+  "skills": 0,
+  "rep": 0,
+  "ctx_tokens": 28202,
+  "skill_file_chars": 0
+ },
+ {
+  "skills": 0,
+  "rep": 1,
+  "ctx_tokens": 28202,
+  "skill_file_chars": 0
+ },
+ {
+  "skills": 0,
+  "rep": 2,
+  "ctx_tokens": 28202,
+  "skill_file_chars": 0
+ },
+ {
+  "skills": 0,
+  "rep": 3,
+  "ctx_tokens": 28202,
+  "skill_file_chars": 0
+ },
+ {
+  "skills": 0,
+  "rep": 4,
+  "ctx_tokens": 28202,
+  "skill_file_chars": 0
+ },
+ {
+  "skills": 5,
+  "rep": 0,
+  "ctx_tokens": 28327,
+  "skill_file_chars": 12840
+ },
+ {
+  "skills": 5,
+  "rep": 1,
+  "ctx_tokens": 28327,
+  "skill_file_chars": 12840
+ },
+ {
+  "skills": 5,
+  "rep": 2,
+  "ctx_tokens": 28327,
+  "skill_file_chars": 12840
+ },
+ {
+  "skills": 5,
+  "rep": 3,
+  "ctx_tokens": 28327,
+  "skill_file_chars": 12840
+ },
+ {
+  "skills": 5,
+  "rep": 4,
+  "ctx_tokens": 28327,
+  "skill_file_chars": 12840
+ },
+ {
+  "skills": 10,
+  "rep": 0,
+  "ctx_tokens": 28448,
+  "skill_file_chars": 25683
+ },
+ {
+  "skills": 10,
+  "rep": 1,
+  "ctx_tokens": 28448,
+  "skill_file_chars": 25683
+ },
+ {
+  "skills": 10,
+  "rep": 2,
+  "ctx_tokens": 28448,
+  "skill_file_chars": 25683
+ },
+ {
+  "skills": 10,
+  "rep": 3,
+  "ctx_tokens": 28448,
+  "skill_file_chars": 25683
+ },
+ {
+  "skills": 10,
+  "rep": 4,
+  "ctx_tokens": 28448,
+  "skill_file_chars": 25683
+ },
+ {
+  "skills": 20,
+  "rep": 0,
+  "ctx_tokens": 28702,
+  "skill_file_chars": 51393
+ },
+ {
+  "skills": 20,
+  "rep": 1,
+  "ctx_tokens": 28702,
+  "skill_file_chars": 51393
+ },
+ {
+  "skills": 20,
+  "rep": 2,
+  "ctx_tokens": 28702,
+  "skill_file_chars": 51393
+ },
+ {
+  "skills": 20,
+  "rep": 3,
+  "ctx_tokens": 28702,
+  "skill_file_chars": 51393
+ },
+ {
+  "skills": 20,
+  "rep": 4,
+  "ctx_tokens": 28702,
+  "skill_file_chars": 51393
+ }
+]

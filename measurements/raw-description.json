@@ -1,0 +1,38 @@
+[
+ {
+  "desc": "bad",
+  "rep": 0,
+  "ctx_tokens": 29404,
+  "desc_chars": 203
+ },
+ {
+  "desc": "bad",
+  "rep": 1,
+  "ctx_tokens": 29315,
+  "desc_chars": 203
+ },
+ {
+  "desc": "bad",
+  "rep": 2,
+  "ctx_tokens": 29404,
+  "desc_chars": 203
+ },
+ {
+  "desc": "good",
+  "rep": 0,
+  "ctx_tokens": 29985,
+  "desc_chars": 116
+ },
+ {
+  "desc": "good",
+  "rep": 1,
+  "ctx_tokens": 29142,
+  "desc_chars": 116
+ },
+ {
+  "desc": "good",
+  "rep": 2,
+  "ctx_tokens": 29985,
+  "desc_chars": 116
+ }
+]
