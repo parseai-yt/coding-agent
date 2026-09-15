@@ -1,0 +1,8 @@
+{
+ "label": "on-1",
+ "condition": "on",
+ "seconds": 102.9,
+ "tests_after": "6 passed in 0.01s",
+ "tests_exit": 0,
+ "cart_py_after": "from dataclasses import dataclass, field\n\nTAX_RATE = 0.08\nBULK_THRESHOLD = 10\nBULK_DISCOUNT = 0.05\n\n\n@dataclass\nclass Line:\n    sku: str\n    unit_price_cents: int\n    qty: int\n\n\n@dataclass\nclass Cart:\n    lines: list = field(default_factory=list)\n    coupon_percent: int = 0\n\n    def add(self, sku: str, unit_price_cents: int, qty: int = 1) -> None:\n        if qty <= 0:\n            raise ValueError(\"qty must be positive\")\n        for line in self.lines:\n            if line.sku == sku:\n                line.qty += qty\n                return\n        self.lines.append(Line(sku, unit_price_cents, qty))\n\n    def item_count(self) -> int:\n        return sum(line.qty for line in self.lines)\n\n    def subtotal_cents(self) -> int:\n        return sum(line.unit_price_cents * line.qty for line in self.lines)\n\n    def discount_cents(self) -> int:\n        rate = self.coupon_percent / 100\n        if self.item_count() >= BULK_THRESHOLD:\n            rate += BULK_DISCOUNT\n        return round(self.subtotal_cents() * rate)\n\n    def tax_cents(self) -> int:\n        return round((self.subtotal_cents() - self.discount_cents()) * TAX_RATE)\n\n    def total_cents(self) -> int:\n        return self.subtotal_cents() - self.discount_cents() + self.tax_cents()\n"
+}

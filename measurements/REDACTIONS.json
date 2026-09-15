@@ -1,0 +1,71 @@
+{
+ "raw/failed-off-2-usage-limit.jsonl": {
+  "init_event": 3,
+  "rate_limit_event": 4,
+  "<scratch>": 23,
+  "limit_reset_time": 2
+ },
+ "raw/off-0.jsonl": {
+  "init_event": 3,
+  "rate_limit_event": 5,
+  "<scratch>": 23
+ },
+ "raw/off-1.jsonl": {
+  "init_event": 3,
+  "rate_limit_event": 5,
+  "<scratch>": 23
+ },
+ "raw/off-2.jsonl": {
+  "init_event": 3,
+  "rate_limit_event": 2,
+  "<scratch>": 26
+ },
+ "raw/off-3.jsonl": {
+  "init_event": 3,
+  "rate_limit_event": 2,
+  "<scratch>": 21
+ },
+ "raw/off-4.jsonl": {
+  "init_event": 3,
+  "rate_limit_event": 2,
+  "<scratch>": 26
+ },
+ "raw/on-0.jsonl": {
+  "init_event": 3,
+  "rate_limit_event": 4,
+  "<scratch>": 29
+ },
+ "raw/on-1.jsonl": {
+  "init_event": 3,
+  "rate_limit_event": 5,
+  "<scratch>": 29
+ },
+ "raw/on-2.jsonl": {
+  "init_event": 3,
+  "rate_limit_event": 2,
+  "<scratch>": 29
+ },
+ "raw/on-3.jsonl": {
+  "init_event": 3,
+  "rate_limit_event": 2,
+  "<scratch>": 24
+ },
+ "raw/on-4.jsonl": {
+  "init_event": 3,
+  "rate_limit_event": 2,
+  "<scratch>": 27
+ },
+ "raw/pilot-off.jsonl": {
+  "init_event": 3,
+  "rate_limit_event": 4,
+  "<scratch>": 26
+ },
+ "raw/pilot-on.jsonl": {
+  "init_event": 3,
+  "rate_limit_event": 4,
+  "<scratch>": 26
+ },
+ "sweep-0-1.log": {
+  "<parseai>": 3
+ }
+}

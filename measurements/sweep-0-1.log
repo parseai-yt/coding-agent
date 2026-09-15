@@ -1,0 +1,13 @@
+off-0 142.0 s 6 passed in 0.07s
+on-0 180.1 s 6 passed in 0.02s
+off-1 130.8 s 6 passed in 0.01s
+on-1 102.9 s 6 passed in 0.01s
+Traceback (most recent call last):
+  File "<parseai>/channel/videos/long-006-caveman-bill/measurements/measure.py", line 165, in <module>
+    main()
+  File "<parseai>/channel/videos/long-006-caveman-bill/measurements/measure.py", line 160, in main
+    s = run_session(cond, f"{cond}-{rep}")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<parseai>/channel/videos/long-006-caveman-bill/measurements/measure.py", line 123, in run_session
+    raise RuntimeError(f"{label}: claude exit {proc.returncode}: {proc.stderr.read()[-2000:]}")
+RuntimeError: off-2: claude exit 1: 
