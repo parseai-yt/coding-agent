@@ -1,0 +1,12 @@
+{
+ "cli_version": "2.1.271 (Claude Code)",
+ "task": "review",
+ "prompt": "Review the code in invoices/ against the rules in README.md. Write your findings to REVIEW.md, most serious first, each with the file, the line, why it is wrong, and the fix. Do not change any code.",
+ "allowed_tools": "Read,Edit,Write,Glob,Grep,Bash(python3 -m unittest*),Bash(python3 -m unittest)",
+ "started_utc": "2026-09-15T01:18:31Z",
+ "models": [
+  "claude-fable-5-1",
+  "claude-fable-5"
+ ],
+ "repeats": 1
+}

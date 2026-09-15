@@ -1,0 +1,29 @@
+--- a/invoices/invoice.py
++++ b/invoices/invoice.py
+@@ -28,13 +28,13 @@
+         return sum(line.cents() for line in self.lines)
+ 
+     def tax(self) -> int:
+-        return percent_of(self.subtotal(), self.tax_rate)
++        return percent_of(self.subtotal() - self.discount(), self.tax_rate)
+ 
+     def discount(self) -> int:
+         return percent_of(self.subtotal(), self.discount_rate)
+ 
+     def total(self) -> int:
+-        return self.subtotal() + self.tax() - self.discount()
++        return self.subtotal() - self.discount() + self.tax()
+ 
+     def render(self) -> str:
+         rows = [f"{l.description:<20} {l.quantity:>3} x {fmt(to_cents(l.unit_price))}" for l in self.lines]
+--- a/invoices/money.py
++++ b/invoices/money.py
+@@ -3,7 +3,7 @@
+ 
+ def to_cents(amount: float) -> int:
+     """Convert a decimal amount such as 19.99 to integer cents."""
+-    return int(amount * 100)
++    return int(amount * 100 + 0.5)
+ 
+ 
+ def percent_of(cents: int, rate: float) -> int:

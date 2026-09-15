@@ -1,0 +1,109 @@
+{
+ "raw/bugfix-claude-fable-5-1-r1.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 4
+ },
+ "raw/bugfix-claude-fable-5-1-r2.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 6
+ },
+ "raw/bugfix-claude-fable-5-1-r3.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 4
+ },
+ "raw/bugfix-claude-fable-5-1-r4.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 4
+ },
+ "raw/bugfix-claude-fable-5-1-r5.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 4
+ },
+ "raw/bugfix-claude-fable-5-1-r6.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 4
+ },
+ "raw/bugfix-claude-fable-5-r1.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 5
+ },
+ "raw/bugfix-claude-fable-5-r2.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 3
+ },
+ "raw/bugfix-claude-fable-5-r3.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 4
+ },
+ "raw/bugfix-claude-fable-5-r4.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 3
+ },
+ "raw/bugfix-claude-fable-5-r5.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 5
+ },
+ "raw/bugfix-claude-fable-5-r6.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 5
+ },
+ "raw/limit-hit/review-claude-fable-5-1-r4.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 3,
+  "limit_reset_time": 2
+ },
+ "raw/limit-hit/review-claude-fable-5-1-r5.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 1,
+  "limit_reset_time": 2
+ },
+ "raw/limit-hit/review-claude-fable-5-r5.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 1,
+  "limit_reset_time": 2
+ },
+ "raw/pilot-claude-fable-5-1-r1.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 3
+ },
+ "raw/review-claude-fable-5-1-r1.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 4
+ },
+ "raw/review-claude-fable-5-1-r2.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 4
+ },
+ "raw/review-claude-fable-5-1-r3.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 4
+ },
+ "raw/review-claude-fable-5-1-r4.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 4
+ },
+ "raw/review-claude-fable-5-1-r5.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 4
+ },
+ "raw/review-claude-fable-5-r1.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 4
+ },
+ "raw/review-claude-fable-5-r2.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 3
+ },
+ "raw/review-claude-fable-5-r3.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 3
+ },
+ "raw/review-claude-fable-5-r4.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 3
+ },
+ "raw/review-claude-fable-5-r5.jsonl": {
+  "init_event": 1,
+  "rate_limit_event": 5
+ }
+}

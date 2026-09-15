@@ -1,0 +1,12 @@
+{
+ "name": "bugfix-claude-fable-5-r6",
+ "model": "claude-fable-5",
+ "exit_code": 0,
+ "wall_seconds": 46.3,
+ "visible_tests_pass": true,
+ "visible_tests_tail": "OK",
+ "hidden_test_pass": true,
+ "hidden_test_tail": "OK",
+ "tests_unchanged": true,
+ "success": true
+}

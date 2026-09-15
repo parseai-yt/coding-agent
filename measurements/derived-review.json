@@ -1,0 +1,649 @@
+{
+ "tag": "review",
+ "summary": {
+  "claude-fable-5-1": {
+   "n": 5,
+   "successes": 5,
+   "median_usd": 0.551,
+   "range_usd": [
+    0.4825,
+    0.6911
+   ],
+   "median_tokens": {
+    "input": 130,
+    "cache_write": 11789,
+    "cache_read": 94240,
+    "output": 5410
+   },
+   "range_tokens": {
+    "input": [
+     130,
+     162
+    ],
+    "cache_write": [
+     10129,
+     13926
+    ],
+    "cache_read": [
+     91815,
+     121538
+    ],
+    "output": [
+     4866,
+     7591
+    ]
+   },
+   "median_line_usd": {
+    "input": 0.0013,
+    "cache_write": 0.2358,
+    "cache_read": 0.0236,
+    "output": 0.2705
+   },
+   "median_requests": 5,
+   "max_abs_reconcile_diff": 0.0
+  },
+  "claude-fable-5": {
+   "n": 5,
+   "successes": 5,
+   "median_usd": 0.449,
+   "range_usd": [
+    0.4019,
+    0.7558
+   ],
+   "median_tokens": {
+    "input": 8,
+    "cache_write": 8440,
+    "cache_read": 68982,
+    "output": 3766
+   },
+   "range_tokens": {
+    "input": [
+     8,
+     12
+    ],
+    "cache_write": [
+     7980,
+     14088
+    ],
+    "cache_read": [
+     68966,
+     110934
+    ],
+    "output": [
+     3445,
+     7240
+    ]
+   },
+   "median_line_usd": {
+    "input": 0.0001,
+    "cache_write": 0.1688,
+    "cache_read": 0.069,
+    "output": 0.1883
+   },
+   "median_requests": 4,
+   "max_abs_reconcile_diff": 0.0
+  }
+ },
+ "sessions": [
+  {
+   "name": "review-claude-fable-5-1-r1",
+   "model": "claude-fable-5-1",
+   "rep": 1,
+   "success": true,
+   "success_v1_grader": true,
+   "num_turns": 8,
+   "requests": 5,
+   "tokens": {
+    "input": 130,
+    "cache_write": 10129,
+    "cache_write_1h": 10129,
+    "cache_write_5m": 0,
+    "cache_read": 92831,
+    "output": 5410,
+    "thinking": 1001
+   },
+   "usd": {
+    "input": 0.0013,
+    "cache_write": 0.20258,
+    "cache_read": 0.023208,
+    "output": 0.2705
+   },
+   "usd_other_models": 0.001003,
+   "usd_computed": 0.498591,
+   "usd_claude_code": 0.498591,
+   "reconcile_diff": 0.0,
+   "turns": [
+    {
+     "cache_read": 14533,
+     "cache_write": 3666,
+     "input": 2
+    },
+    {
+     "cache_read": 18199,
+     "cache_write": 449,
+     "input": 32
+    },
+    {
+     "cache_read": 18648,
+     "cache_write": 1275,
+     "input": 32
+    },
+    {
+     "cache_read": 19923,
+     "cache_write": 1605,
+     "input": 32
+    },
+    {
+     "cache_read": 21528,
+     "cache_write": 3134,
+     "input": 32
+    }
+   ]
+  },
+  {
+   "name": "review-claude-fable-5-1-r2",
+   "model": "claude-fable-5-1",
+   "rep": 2,
+   "success": true,
+   "success_v1_grader": true,
+   "num_turns": 10,
+   "requests": 5,
+   "tokens": {
+    "input": 130,
+    "cache_write": 10665,
+    "cache_write_1h": 10665,
+    "cache_write_5m": 0,
+    "cache_read": 94240,
+    "output": 4866,
+    "thinking": 764
+   },
+   "usd": {
+    "input": 0.0013,
+    "cache_write": 0.2133,
+    "cache_read": 0.02356,
+    "output": 0.2433
+   },
+   "usd_other_models": 0.001013,
+   "usd_computed": 0.482473,
+   "usd_claude_code": 0.482473,
+   "reconcile_diff": 0.0,
+   "turns": [
+    {
+     "cache_read": 14533,
+     "cache_write": 3667,
+     "input": 2
+    },
+    {
+     "cache_read": 18200,
+     "cache_write": 469,
+     "input": 32
+    },
+    {
+     "cache_read": 18669,
+     "cache_write": 2169,
+     "input": 32
+    },
+    {
+     "cache_read": 20838,
+     "cache_write": 1162,
+     "input": 32
+    },
+    {
+     "cache_read": 22000,
+     "cache_write": 3198,
+     "input": 32
+    }
+   ]
+  },
+  {
+   "name": "review-claude-fable-5-1-r3",
+   "model": "claude-fable-5-1",
+   "rep": 3,
+   "success": true,
+   "success_v1_grader": true,
+   "num_turns": 10,
+   "requests": 5,
+   "tokens": {
+    "input": 130,
+    "cache_write": 11789,
+    "cache_write_1h": 11789,
+    "cache_write_5m": 0,
+    "cache_read": 94289,
+    "output": 6136,
+    "thinking": 1610
+   },
+   "usd": {
+    "input": 0.0013,
+    "cache_write": 0.23578,
+    "cache_read": 0.023572,
+    "output": 0.3068
+   },
+   "usd_other_models": 0.001023,
+   "usd_computed": 0.568475,
+   "usd_claude_code": 0.568475,
+   "reconcile_diff": 0.0,
+   "turns": [
+    {
+     "cache_read": 14533,
+     "cache_write": 3666,
+     "input": 2
+    },
+    {
+     "cache_read": 18199,
+     "cache_write": 471,
+     "input": 32
+    },
+    {
+     "cache_read": 18670,
+     "cache_write": 2170,
+     "input": 32
+    },
+    {
+     "cache_read": 20840,
+     "cache_write": 1207,
+     "input": 32
+    },
+    {
+     "cache_read": 22047,
+     "cache_write": 4275,
+     "input": 32
+    }
+   ]
+  },
+  {
+   "name": "review-claude-fable-5-1-r4",
+   "model": "claude-fable-5-1",
+   "rep": 4,
+   "success": true,
+   "success_v1_grader": true,
+   "num_turns": 10,
+   "requests": 5,
+   "tokens": {
+    "input": 130,
+    "cache_write": 13567,
+    "cache_write_1h": 13567,
+    "cache_write_5m": 0,
+    "cache_read": 91815,
+    "output": 5088,
+    "thinking": 1036
+   },
+   "usd": {
+    "input": 0.0013,
+    "cache_write": 0.27134,
+    "cache_read": 0.022954,
+    "output": 0.2544
+   },
+   "usd_other_models": 0.001023,
+   "usd_computed": 0.551017,
+   "usd_claude_code": 0.551017,
+   "reconcile_diff": 0.0,
+   "turns": [
+    {
+     "cache_read": 11688,
+     "cache_write": 6512,
+     "input": 2
+    },
+    {
+     "cache_read": 18200,
+     "cache_write": 485,
+     "input": 32
+    },
+    {
+     "cache_read": 18685,
+     "cache_write": 2167,
+     "input": 32
+    },
+    {
+     "cache_read": 20852,
+     "cache_write": 1538,
+     "input": 32
+    },
+    {
+     "cache_read": 22390,
+     "cache_write": 2865,
+     "input": 32
+    }
+   ]
+  },
+  {
+   "name": "review-claude-fable-5-1-r5",
+   "model": "claude-fable-5-1",
+   "rep": 5,
+   "success": true,
+   "success_v1_grader": true,
+   "num_turns": 12,
+   "requests": 6,
+   "tokens": {
+    "input": 162,
+    "cache_write": 13926,
+    "cache_write_1h": 13926,
+    "cache_write_5m": 0,
+    "cache_read": 121538,
+    "output": 7591,
+    "thinking": 2546
+   },
+   "usd": {
+    "input": 0.00162,
+    "cache_write": 0.27852,
+    "cache_read": 0.030384,
+    "output": 0.37955
+   },
+   "usd_other_models": 0.001018,
+   "usd_computed": 0.691092,
+   "usd_claude_code": 0.691092,
+   "reconcile_diff": 0.0,
+   "turns": [
+    {
+     "cache_read": 14533,
+     "cache_write": 3666,
+     "input": 2
+    },
+    {
+     "cache_read": 18199,
+     "cache_write": 527,
+     "input": 32
+    },
+    {
+     "cache_read": 18726,
+     "cache_write": 2162,
+     "input": 32
+    },
+    {
+     "cache_read": 20888,
+     "cache_write": 2680,
+     "input": 32
+    },
+    {
+     "cache_read": 23568,
+     "cache_write": 2056,
+     "input": 32
+    },
+    {
+     "cache_read": 25624,
+     "cache_write": 2835,
+     "input": 32
+    }
+   ]
+  },
+  {
+   "name": "review-claude-fable-5-r1",
+   "model": "claude-fable-5",
+   "rep": 1,
+   "success": true,
+   "success_v1_grader": false,
+   "num_turns": 8,
+   "requests": 5,
+   "tokens": {
+    "input": 10,
+    "cache_write": 8440,
+    "cache_write_1h": 8440,
+    "cache_write_5m": 0,
+    "cache_read": 90748,
+    "output": 3766,
+    "thinking": 839
+   },
+   "usd": {
+    "input": 0.0001,
+    "cache_write": 0.1688,
+    "cache_read": 0.090748,
+    "output": 0.1883
+   },
+   "usd_other_models": 0.001008,
+   "usd_computed": 0.448956,
+   "usd_claude_code": 0.448956,
+   "reconcile_diff": 0.0,
+   "turns": [
+    {
+     "cache_read": 13957,
+     "cache_write": 3658,
+     "input": 2
+    },
+    {
+     "cache_read": 17615,
+     "cache_write": 439,
+     "input": 2
+    },
+    {
+     "cache_read": 18054,
+     "cache_write": 1268,
+     "input": 2
+    },
+    {
+     "cache_read": 19322,
+     "cache_write": 2478,
+     "input": 2
+    },
+    {
+     "cache_read": 21800,
+     "cache_write": 597,
+     "input": 2
+    }
+   ]
+  },
+  {
+   "name": "review-claude-fable-5-r2",
+   "model": "claude-fable-5",
+   "rep": 2,
+   "success": true,
+   "success_v1_grader": true,
+   "num_turns": 7,
+   "requests": 4,
+   "tokens": {
+    "input": 8,
+    "cache_write": 8066,
+    "cache_write_1h": 8066,
+    "cache_write_5m": 0,
+    "cache_read": 68982,
+    "output": 3519,
+    "thinking": 895
+   },
+   "usd": {
+    "input": 8e-05,
+    "cache_write": 0.16132,
+    "cache_read": 0.068982,
+    "output": 0.17595
+   },
+   "usd_other_models": 0.001018,
+   "usd_computed": 0.40735,
+   "usd_claude_code": 0.40735,
+   "reconcile_diff": 0.0,
+   "turns": [
+    {
+     "cache_read": 13957,
+     "cache_write": 3661,
+     "input": 2
+    },
+    {
+     "cache_read": 17618,
+     "cache_write": 447,
+     "input": 2
+    },
+    {
+     "cache_read": 18065,
+     "cache_write": 1277,
+     "input": 2
+    },
+    {
+     "cache_read": 19342,
+     "cache_write": 2681,
+     "input": 2
+    }
+   ]
+  },
+  {
+   "name": "review-claude-fable-5-r3",
+   "model": "claude-fable-5",
+   "rep": 3,
+   "success": true,
+   "success_v1_grader": true,
+   "num_turns": 7,
+   "requests": 4,
+   "tokens": {
+    "input": 8,
+    "cache_write": 7980,
+    "cache_write_1h": 7980,
+    "cache_write_5m": 0,
+    "cache_read": 68978,
+    "output": 3445,
+    "thinking": 977
+   },
+   "usd": {
+    "input": 8e-05,
+    "cache_write": 0.1596,
+    "cache_read": 0.068978,
+    "output": 0.17225
+   },
+   "usd_other_models": 0.001018,
+   "usd_computed": 0.401926,
+   "usd_claude_code": 0.401926,
+   "reconcile_diff": -0.0,
+   "turns": [
+    {
+     "cache_read": 13957,
+     "cache_write": 3660,
+     "input": 2
+    },
+    {
+     "cache_read": 17617,
+     "cache_write": 448,
+     "input": 2
+    },
+    {
+     "cache_read": 18065,
+     "cache_write": 1274,
+     "input": 2
+    },
+    {
+     "cache_read": 19339,
+     "cache_write": 2598,
+     "input": 2
+    }
+   ]
+  },
+  {
+   "name": "review-claude-fable-5-r4",
+   "model": "claude-fable-5",
+   "rep": 4,
+   "success": true,
+   "success_v1_grader": true,
+   "num_turns": 7,
+   "requests": 4,
+   "tokens": {
+    "input": 8,
+    "cache_write": 8984,
+    "cache_write_1h": 8984,
+    "cache_write_5m": 0,
+    "cache_read": 68966,
+    "output": 4488,
+    "thinking": 1910
+   },
+   "usd": {
+    "input": 8e-05,
+    "cache_write": 0.17968,
+    "cache_read": 0.068966,
+    "output": 0.2244
+   },
+   "usd_other_models": 0.001008,
+   "usd_computed": 0.474134,
+   "usd_claude_code": 0.474134,
+   "reconcile_diff": 0.0,
+   "turns": [
+    {
+     "cache_read": 13957,
+     "cache_write": 3660,
+     "input": 2
+    },
+    {
+     "cache_read": 17617,
+     "cache_write": 442,
+     "input": 2
+    },
+    {
+     "cache_read": 18059,
+     "cache_write": 1274,
+     "input": 2
+    },
+    {
+     "cache_read": 19333,
+     "cache_write": 3608,
+     "input": 2
+    }
+   ]
+  },
+  {
+   "name": "review-claude-fable-5-r5",
+   "model": "claude-fable-5",
+   "rep": 5,
+   "success": true,
+   "success_v1_grader": true,
+   "num_turns": 9,
+   "requests": 6,
+   "tokens": {
+    "input": 12,
+    "cache_write": 14088,
+    "cache_write_1h": 14088,
+    "cache_write_5m": 0,
+    "cache_read": 110934,
+    "output": 7240,
+    "thinking": 3434
+   },
+   "usd": {
+    "input": 0.00012,
+    "cache_write": 0.28176,
+    "cache_read": 0.110934,
+    "output": 0.362
+   },
+   "usd_other_models": 0.001013,
+   "usd_computed": 0.755827,
+   "usd_claude_code": 0.755827,
+   "reconcile_diff": 0.0,
+   "turns": [
+    {
+     "cache_read": 11692,
+     "cache_write": 5925,
+     "input": 2
+    },
+    {
+     "cache_read": 17617,
+     "cache_write": 447,
+     "input": 2
+    },
+    {
+     "cache_read": 18064,
+     "cache_write": 1274,
+     "input": 2
+    },
+    {
+     "cache_read": 19338,
+     "cache_write": 2483,
+     "input": 2
+    },
+    {
+     "cache_read": 21821,
+     "cache_write": 581,
+     "input": 2
+    },
+    {
+     "cache_read": 22402,
+     "cache_write": 3378,
+     "input": 2
+    }
+   ]
+  }
+ ],
+ "comparison": {
+  "median_cost_change_pct": 22.7,
+  "output_ratio_median": 1.44,
+  "cache_read_ratio_median": 1.37,
+  "spread_within_fable_5_1_usd": 0.2086,
+  "spread_within_fable_5_usd": 0.3539,
+  "gap_between_medians_usd": 0.102,
+  "fable5_sessions_repriced_at_5_1_median_usd": 0.3799,
+  "fable5_sessions_at_own_price_main_model_median_usd": 0.4479,
+  "price_cut_alone_saving_pct": -15.2,
+  "breakeven_formula": "cache_read_tokens / output_tokens_on_fable_5 > (k - 1) x 50 / 0.75, k = output ratio",
+  "breakeven_reads_per_output_token_at_k_1_7": 46.7,
+  "breakeven_reads_per_output_token_at_measured_k": 29.3,
+  "session_reads_per_output_token_fable_5_median": 19.6
+ }
+}

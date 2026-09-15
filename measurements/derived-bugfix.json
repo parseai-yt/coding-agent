@@ -1,0 +1,772 @@
+{
+ "tag": "bugfix",
+ "summary": {
+  "claude-fable-5-1": {
+   "n": 6,
+   "successes": 6,
+   "median_usd": 0.2982,
+   "range_usd": [
+    0.2852,
+    0.3046
+   ],
+   "median_tokens": {
+    "input": 130.0,
+    "cache_write": 8380.0,
+    "cache_read": 95996.0,
+    "output": 2057.5
+   },
+   "range_tokens": {
+    "input": [
+     130,
+     130
+    ],
+    "cache_write": [
+     8260,
+     8628
+    ],
+    "cache_read": [
+     95554,
+     96503
+    ],
+    "output": [
+     1840,
+     2196
+    ]
+   },
+   "median_line_usd": {
+    "input": 0.0013,
+    "cache_write": 0.1676,
+    "cache_read": 0.024,
+    "output": 0.1029
+   },
+   "median_requests": 5.0,
+   "max_abs_reconcile_diff": 0.0
+  },
+  "claude-fable-5": {
+   "n": 6,
+   "successes": 6,
+   "median_usd": 0.3681,
+   "range_usd": [
+    0.3477,
+    0.4153
+   ],
+   "median_tokens": {
+    "input": 12.0,
+    "cache_write": 8087.0,
+    "cache_read": 111453.0,
+    "output": 1964.0
+   },
+   "range_tokens": {
+    "input": [
+     10,
+     12
+    ],
+    "cache_write": [
+     7721,
+     10304
+    ],
+    "cache_read": [
+     91615,
+     114667
+    ],
+    "output": [
+     1598,
+     2343
+    ]
+   },
+   "median_line_usd": {
+    "input": 0.0001,
+    "cache_write": 0.1617,
+    "cache_read": 0.1115,
+    "output": 0.0982
+   },
+   "median_requests": 6.0,
+   "max_abs_reconcile_diff": 0.0
+  }
+ },
+ "sessions": [
+  {
+   "name": "bugfix-claude-fable-5-1-r1",
+   "model": "claude-fable-5-1",
+   "rep": 1,
+   "success": true,
+   "num_turns": 11,
+   "requests": 5,
+   "tokens": {
+    "input": 130,
+    "cache_write": 8344,
+    "cache_write_1h": 8344,
+    "cache_write_5m": 0,
+    "cache_read": 95961,
+    "output": 1840,
+    "thinking": 72
+   },
+   "usd": {
+    "input": 0.0013,
+    "cache_write": 0.16688,
+    "cache_read": 0.02399,
+    "output": 0.092
+   },
+   "usd_other_models": 0.001023,
+   "usd_computed": 0.285193,
+   "usd_claude_code": 0.285193,
+   "reconcile_diff": -0.0,
+   "turns": [
+    {
+     "cache_read": 14533,
+     "cache_write": 3690,
+     "input": 2
+    },
+    {
+     "cache_read": 18223,
+     "cache_write": 935,
+     "input": 32
+    },
+    {
+     "cache_read": 19158,
+     "cache_write": 2246,
+     "input": 32
+    },
+    {
+     "cache_read": 21404,
+     "cache_write": 1239,
+     "input": 32
+    },
+    {
+     "cache_read": 22643,
+     "cache_write": 234,
+     "input": 32
+    }
+   ]
+  },
+  {
+   "name": "bugfix-claude-fable-5-1-r2",
+   "model": "claude-fable-5-1",
+   "rep": 2,
+   "success": true,
+   "num_turns": 10,
+   "requests": 5,
+   "tokens": {
+    "input": 130,
+    "cache_write": 8494,
+    "cache_write_1h": 8494,
+    "cache_write_5m": 0,
+    "cache_read": 96124,
+    "output": 2108,
+    "thinking": 175
+   },
+   "usd": {
+    "input": 0.0013,
+    "cache_write": 0.16988,
+    "cache_read": 0.024031,
+    "output": 0.1054
+   },
+   "usd_other_models": 0.001013,
+   "usd_computed": 0.301624,
+   "usd_claude_code": 0.301624,
+   "reconcile_diff": -0.0,
+   "turns": [
+    {
+     "cache_read": 14533,
+     "cache_write": 3691,
+     "input": 2
+    },
+    {
+     "cache_read": 18224,
+     "cache_write": 935,
+     "input": 32
+    },
+    {
+     "cache_read": 19159,
+     "cache_write": 2253,
+     "input": 32
+    },
+    {
+     "cache_read": 21412,
+     "cache_write": 1384,
+     "input": 32
+    },
+    {
+     "cache_read": 22796,
+     "cache_write": 231,
+     "input": 32
+    }
+   ]
+  },
+  {
+   "name": "bugfix-claude-fable-5-1-r3",
+   "model": "claude-fable-5-1",
+   "rep": 3,
+   "success": true,
+   "num_turns": 8,
+   "requests": 5,
+   "tokens": {
+    "input": 130,
+    "cache_write": 8268,
+    "cache_write_1h": 8268,
+    "cache_write_5m": 0,
+    "cache_read": 95554,
+    "output": 2196,
+    "thinking": 401
+   },
+   "usd": {
+    "input": 0.0013,
+    "cache_write": 0.16536,
+    "cache_read": 0.023889,
+    "output": 0.1098
+   },
+   "usd_other_models": 0.001018,
+   "usd_computed": 0.301367,
+   "usd_claude_code": 0.301367,
+   "reconcile_diff": 0.0,
+   "turns": [
+    {
+     "cache_read": 14533,
+     "cache_write": 3688,
+     "input": 2
+    },
+    {
+     "cache_read": 18221,
+     "cache_write": 1057,
+     "input": 32
+    },
+    {
+     "cache_read": 19278,
+     "cache_write": 1675,
+     "input": 32
+    },
+    {
+     "cache_read": 20953,
+     "cache_write": 1616,
+     "input": 32
+    },
+    {
+     "cache_read": 22569,
+     "cache_write": 232,
+     "input": 32
+    }
+   ]
+  },
+  {
+   "name": "bugfix-claude-fable-5-1-r4",
+   "model": "claude-fable-5-1",
+   "rep": 4,
+   "success": true,
+   "num_turns": 9,
+   "requests": 5,
+   "tokens": {
+    "input": 130,
+    "cache_write": 8260,
+    "cache_write_1h": 8260,
+    "cache_write_5m": 0,
+    "cache_read": 95858,
+    "output": 1925,
+    "thinking": 257
+   },
+   "usd": {
+    "input": 0.0013,
+    "cache_write": 0.1652,
+    "cache_read": 0.023964,
+    "output": 0.09625
+   },
+   "usd_other_models": 0.001018,
+   "usd_computed": 0.287733,
+   "usd_claude_code": 0.287733,
+   "reconcile_diff": 0.0,
+   "turns": [
+    {
+     "cache_read": 14533,
+     "cache_write": 3690,
+     "input": 2
+    },
+    {
+     "cache_read": 18223,
+     "cache_write": 1047,
+     "input": 32
+    },
+    {
+     "cache_read": 19270,
+     "cache_write": 1999,
+     "input": 32
+    },
+    {
+     "cache_read": 21269,
+     "cache_write": 1294,
+     "input": 32
+    },
+    {
+     "cache_read": 22563,
+     "cache_write": 230,
+     "input": 32
+    }
+   ]
+  },
+  {
+   "name": "bugfix-claude-fable-5-1-r5",
+   "model": "claude-fable-5-1",
+   "rep": 5,
+   "success": true,
+   "num_turns": 10,
+   "requests": 5,
+   "tokens": {
+    "input": 130,
+    "cache_write": 8416,
+    "cache_write_1h": 8416,
+    "cache_write_5m": 0,
+    "cache_read": 96031,
+    "output": 2007,
+    "thinking": 119
+   },
+   "usd": {
+    "input": 0.0013,
+    "cache_write": 0.16832,
+    "cache_read": 0.024008,
+    "output": 0.10035
+   },
+   "usd_other_models": 0.001018,
+   "usd_computed": 0.294996,
+   "usd_claude_code": 0.294996,
+   "reconcile_diff": 0.0,
+   "turns": [
+    {
+     "cache_read": 14533,
+     "cache_write": 3689,
+     "input": 2
+    },
+    {
+     "cache_read": 18222,
+     "cache_write": 934,
+     "input": 32
+    },
+    {
+     "cache_read": 19156,
+     "cache_write": 2246,
+     "input": 32
+    },
+    {
+     "cache_read": 21402,
+     "cache_write": 1316,
+     "input": 32
+    },
+    {
+     "cache_read": 22718,
+     "cache_write": 231,
+     "input": 32
+    }
+   ]
+  },
+  {
+   "name": "bugfix-claude-fable-5-1-r6",
+   "model": "claude-fable-5-1",
+   "rep": 6,
+   "success": true,
+   "num_turns": 10,
+   "requests": 5,
+   "tokens": {
+    "input": 130,
+    "cache_write": 8628,
+    "cache_write_1h": 8628,
+    "cache_write_5m": 0,
+    "cache_read": 96503,
+    "output": 2111,
+    "thinking": 139
+   },
+   "usd": {
+    "input": 0.0013,
+    "cache_write": 0.17256,
+    "cache_read": 0.024126,
+    "output": 0.10555
+   },
+   "usd_other_models": 0.001018,
+   "usd_computed": 0.304554,
+   "usd_claude_code": 0.304554,
+   "reconcile_diff": 0.0,
+   "turns": [
+    {
+     "cache_read": 14533,
+     "cache_write": 3690,
+     "input": 2
+    },
+    {
+     "cache_read": 18223,
+     "cache_write": 1060,
+     "input": 32
+    },
+    {
+     "cache_read": 19283,
+     "cache_write": 2250,
+     "input": 32
+    },
+    {
+     "cache_read": 21533,
+     "cache_write": 1398,
+     "input": 32
+    },
+    {
+     "cache_read": 22931,
+     "cache_write": 230,
+     "input": 32
+    }
+   ]
+  },
+  {
+   "name": "bugfix-claude-fable-5-r1",
+   "model": "claude-fable-5",
+   "rep": 1,
+   "success": true,
+   "num_turns": 8,
+   "requests": 6,
+   "tokens": {
+    "input": 12,
+    "cache_write": 10304,
+    "cache_write_1h": 10304,
+    "cache_write_5m": 0,
+    "cache_read": 110661,
+    "output": 1767,
+    "thinking": 329
+   },
+   "usd": {
+    "input": 0.00012,
+    "cache_write": 0.20608,
+    "cache_read": 0.110661,
+    "output": 0.08835
+   },
+   "usd_other_models": 0.001018,
+   "usd_computed": 0.406229,
+   "usd_claude_code": 0.406229,
+   "reconcile_diff": 0.0,
+   "turns": [
+    {
+     "cache_read": 11692,
+     "cache_write": 5948,
+     "input": 2
+    },
+    {
+     "cache_read": 17640,
+     "cache_write": 1108,
+     "input": 2
+    },
+    {
+     "cache_read": 18748,
+     "cache_write": 1134,
+     "input": 2
+    },
+    {
+     "cache_read": 19882,
+     "cache_write": 1036,
+     "input": 2
+    },
+    {
+     "cache_read": 20918,
+     "cache_write": 863,
+     "input": 2
+    },
+    {
+     "cache_read": 21781,
+     "cache_write": 215,
+     "input": 2
+    }
+   ]
+  },
+  {
+   "name": "bugfix-claude-fable-5-r2",
+   "model": "claude-fable-5",
+   "rep": 2,
+   "success": true,
+   "num_turns": 10,
+   "requests": 6,
+   "tokens": {
+    "input": 12,
+    "cache_write": 8165,
+    "cache_write_1h": 8165,
+    "cache_write_5m": 0,
+    "cache_read": 113160,
+    "output": 1917,
+    "thinking": 511
+   },
+   "usd": {
+    "input": 0.00012,
+    "cache_write": 0.1633,
+    "cache_read": 0.11316,
+    "output": 0.09585
+   },
+   "usd_other_models": 0.001013,
+   "usd_computed": 0.373443,
+   "usd_claude_code": 0.373443,
+   "reconcile_diff": 0.0,
+   "turns": [
+    {
+     "cache_read": 13957,
+     "cache_write": 3681,
+     "input": 2
+    },
+    {
+     "cache_read": 17638,
+     "cache_write": 634,
+     "input": 2
+    },
+    {
+     "cache_read": 18272,
+     "cache_write": 1898,
+     "input": 2
+    },
+    {
+     "cache_read": 20170,
+     "cache_write": 1059,
+     "input": 2
+    },
+    {
+     "cache_read": 21229,
+     "cache_write": 665,
+     "input": 2
+    },
+    {
+     "cache_read": 21894,
+     "cache_write": 228,
+     "input": 2
+    }
+   ]
+  },
+  {
+   "name": "bugfix-claude-fable-5-r3",
+   "model": "claude-fable-5",
+   "rep": 3,
+   "success": true,
+   "num_turns": 9,
+   "requests": 5,
+   "tokens": {
+    "input": 10,
+    "cache_write": 8009,
+    "cache_write_1h": 8009,
+    "cache_write_5m": 0,
+    "cache_read": 91813,
+    "output": 2194,
+    "thinking": 728
+   },
+   "usd": {
+    "input": 0.0001,
+    "cache_write": 0.16018,
+    "cache_read": 0.091813,
+    "output": 0.1097
+   },
+   "usd_other_models": 0.001018,
+   "usd_computed": 0.362811,
+   "usd_claude_code": 0.362811,
+   "reconcile_diff": 0.0,
+   "turns": [
+    {
+     "cache_read": 13957,
+     "cache_write": 3683,
+     "input": 2
+    },
+    {
+     "cache_read": 17640,
+     "cache_write": 645,
+     "input": 2
+    },
+    {
+     "cache_read": 18285,
+     "cache_write": 1910,
+     "input": 2
+    },
+    {
+     "cache_read": 20195,
+     "cache_write": 1541,
+     "input": 2
+    },
+    {
+     "cache_read": 21736,
+     "cache_write": 230,
+     "input": 2
+    }
+   ]
+  },
+  {
+   "name": "bugfix-claude-fable-5-r4",
+   "model": "claude-fable-5",
+   "rep": 4,
+   "success": true,
+   "num_turns": 9,
+   "requests": 5,
+   "tokens": {
+    "input": 10,
+    "cache_write": 7835,
+    "cache_write_1h": 7835,
+    "cache_write_5m": 0,
+    "cache_read": 91615,
+    "output": 2011,
+    "thinking": 535
+   },
+   "usd": {
+    "input": 0.0001,
+    "cache_write": 0.1567,
+    "cache_read": 0.091615,
+    "output": 0.10055
+   },
+   "usd_other_models": 0.001013,
+   "usd_computed": 0.349978,
+   "usd_claude_code": 0.349978,
+   "reconcile_diff": 0.0,
+   "turns": [
+    {
+     "cache_read": 13957,
+     "cache_write": 3682,
+     "input": 2
+    },
+    {
+     "cache_read": 17639,
+     "cache_write": 639,
+     "input": 2
+    },
+    {
+     "cache_read": 18278,
+     "cache_write": 1904,
+     "input": 2
+    },
+    {
+     "cache_read": 20182,
+     "cache_write": 1377,
+     "input": 2
+    },
+    {
+     "cache_read": 21559,
+     "cache_write": 233,
+     "input": 2
+    }
+   ]
+  },
+  {
+   "name": "bugfix-claude-fable-5-r5",
+   "model": "claude-fable-5",
+   "rep": 5,
+   "success": true,
+   "num_turns": 9,
+   "requests": 6,
+   "tokens": {
+    "input": 12,
+    "cache_write": 7721,
+    "cache_write_1h": 7721,
+    "cache_write_5m": 0,
+    "cache_read": 112245,
+    "output": 1598,
+    "thinking": 311
+   },
+   "usd": {
+    "input": 0.00012,
+    "cache_write": 0.15442,
+    "cache_read": 0.112245,
+    "output": 0.0799
+   },
+   "usd_other_models": 0.001013,
+   "usd_computed": 0.347698,
+   "usd_claude_code": 0.347698,
+   "reconcile_diff": 0.0,
+   "turns": [
+    {
+     "cache_read": 13957,
+     "cache_write": 3683,
+     "input": 2
+    },
+    {
+     "cache_read": 17640,
+     "cache_write": 902,
+     "input": 2
+    },
+    {
+     "cache_read": 18542,
+     "cache_write": 1353,
+     "input": 2
+    },
+    {
+     "cache_read": 19895,
+     "cache_write": 872,
+     "input": 2
+    },
+    {
+     "cache_read": 20767,
+     "cache_write": 677,
+     "input": 2
+    },
+    {
+     "cache_read": 21444,
+     "cache_write": 234,
+     "input": 2
+    }
+   ]
+  },
+  {
+   "name": "bugfix-claude-fable-5-r6",
+   "model": "claude-fable-5",
+   "rep": 6,
+   "success": true,
+   "num_turns": 12,
+   "requests": 6,
+   "tokens": {
+    "input": 12,
+    "cache_write": 9116,
+    "cache_write_1h": 9116,
+    "cache_write_5m": 0,
+    "cache_read": 114667,
+    "output": 2343,
+    "thinking": 568
+   },
+   "usd": {
+    "input": 0.00012,
+    "cache_write": 0.18232,
+    "cache_read": 0.114667,
+    "output": 0.11715
+   },
+   "usd_other_models": 0.001018,
+   "usd_computed": 0.415275,
+   "usd_claude_code": 0.415275,
+   "reconcile_diff": 0.0,
+   "turns": [
+    {
+     "cache_read": 13957,
+     "cache_write": 3681,
+     "input": 2
+    },
+    {
+     "cache_read": 17638,
+     "cache_write": 624,
+     "input": 2
+    },
+    {
+     "cache_read": 18262,
+     "cache_write": 2020,
+     "input": 2
+    },
+    {
+     "cache_read": 20282,
+     "cache_write": 1454,
+     "input": 2
+    },
+    {
+     "cache_read": 21736,
+     "cache_write": 1056,
+     "input": 2
+    },
+    {
+     "cache_read": 22792,
+     "cache_write": 281,
+     "input": 2
+    }
+   ]
+  }
+ ],
+ "comparison": {
+  "median_cost_change_pct": -19.0,
+  "output_ratio_median": 1.05,
+  "cache_read_ratio_median": 0.86,
+  "spread_within_fable_5_1_usd": 0.0194,
+  "spread_within_fable_5_usd": 0.0676,
+  "gap_between_medians_usd": -0.0699,
+  "fable5_sessions_repriced_at_5_1_median_usd": 0.2902,
+  "fable5_sessions_at_own_price_main_model_median_usd": 0.3671,
+  "price_cut_alone_saving_pct": -20.9,
+  "breakeven_formula": "cache_read_tokens / output_tokens_on_fable_5 > (k - 1) x 50 / 0.75, k = output ratio",
+  "breakeven_reads_per_output_token_at_k_1_7": 46.7,
+  "breakeven_reads_per_output_token_at_measured_k": 3.3,
+  "session_reads_per_output_token_fable_5_median": 54.0
+ }
+}

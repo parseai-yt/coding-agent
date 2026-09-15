@@ -1,0 +1,39 @@
+--- a/invoices/invoice.py
++++ b/invoices/invoice.py
+@@ -27,14 +27,17 @@
+     def subtotal(self) -> int:
+         return sum(line.cents() for line in self.lines)
+ 
+-    def tax(self) -> int:
+-        return percent_of(self.subtotal(), self.tax_rate)
+-
+     def discount(self) -> int:
+         return percent_of(self.subtotal(), self.discount_rate)
+ 
++    def discounted_subtotal(self) -> int:
++        return self.subtotal() - self.discount()
++
++    def tax(self) -> int:
++        return percent_of(self.discounted_subtotal(), self.tax_rate)
++
+     def total(self) -> int:
+-        return self.subtotal() + self.tax() - self.discount()
++        return self.discounted_subtotal() + self.tax()
+ 
+     def render(self) -> str:
+         rows = [f"{l.description:<20} {l.quantity:>3} x {fmt(to_cents(l.unit_price))}" for l in self.lines]
+--- a/invoices/money.py
++++ b/invoices/money.py
+@@ -1,9 +1,10 @@
+ """Money helpers. Everything downstream works in integer cents."""
++from decimal import ROUND_HALF_UP, Decimal
+ 
+ 
+ def to_cents(amount: float) -> int:
+-    """Convert a decimal amount such as 19.99 to integer cents."""
+-    return int(amount * 100)
++    """Convert a decimal amount such as 19.99 to integer cents, rounding half up."""
++    return int((Decimal(str(amount)) * 100).quantize(Decimal("1"), rounding=ROUND_HALF_UP))
+ 
+ 
+ def percent_of(cents: int, rate: float) -> int:

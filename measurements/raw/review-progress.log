@@ -1,0 +1,11 @@
+  review-claude-fable-5-1-r1               success=True exit=0 72.3s
+  review-claude-fable-5-r1                 success=False exit=0 51.0s
+  review-claude-fable-5-r2                 success=True exit=0 43.9s
+  review-claude-fable-5-1-r2               success=True exit=0 60.0s
+  review-claude-fable-5-1-r3               success=True exit=0 76.8s
+  review-claude-fable-5-r3                 success=True exit=0 47.6s
+  review-claude-fable-5-r4                 success=True exit=0 57.6s
+  review-claude-fable-5-1-r4               success=False exit=1 7.9s
+  review-claude-fable-5-1-r5               success=False exit=1 2.1s
+  review-claude-fable-5-r5                 success=False exit=1 1.8s
+done

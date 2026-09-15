@@ -1,0 +1,13 @@
+  bugfix-claude-fable-5-1-r1               success=True exit=0 24.6s
+  bugfix-claude-fable-5-r1                 success=True exit=0 45.0s
+  bugfix-claude-fable-5-r2                 success=True exit=0 32.6s
+  bugfix-claude-fable-5-1-r2               success=True exit=0 29.3s
+  bugfix-claude-fable-5-1-r3               success=True exit=0 31.0s
+  bugfix-claude-fable-5-r3                 success=True exit=0 28.9s
+  bugfix-claude-fable-5-r4                 success=True exit=0 25.9s
+  bugfix-claude-fable-5-1-r4               success=True exit=0 28.3s
+  bugfix-claude-fable-5-1-r5               success=True exit=0 26.0s
+  bugfix-claude-fable-5-r5                 success=True exit=0 39.3s
+  bugfix-claude-fable-5-r6                 success=True exit=0 46.3s
+  bugfix-claude-fable-5-1-r6               success=True exit=0 59.4s
+done

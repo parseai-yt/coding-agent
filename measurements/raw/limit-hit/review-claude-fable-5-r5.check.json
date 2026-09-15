@@ -1,0 +1,17 @@
+{
+ "task": "review",
+ "review_written": false,
+ "review_names_truncation": false,
+ "review_names_discount_order": false,
+ "code_unchanged": true,
+ "name": "review-claude-fable-5-r5",
+ "model": "claude-fable-5",
+ "exit_code": 1,
+ "wall_seconds": 1.8,
+ "visible_tests_pass": false,
+ "visible_tests_tail": "FAILED (failures=3)",
+ "hidden_test_pass": false,
+ "hidden_test_tail": "FAILED (failures=2)",
+ "tests_unchanged": true,
+ "success": false
+}
