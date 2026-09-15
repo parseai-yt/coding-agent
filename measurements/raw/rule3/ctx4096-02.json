@@ -1,0 +1,35 @@
+{
+ "request": {
+  "endpoint": "/api/chat",
+  "num_ctx": 4096,
+  "num_predict": 80,
+  "messages": [
+   {
+    "role": "system",
+    "chars": 35051
+   },
+   {
+    "role": "user",
+    "chars": 66
+   }
+  ]
+ },
+ "http_status": 200,
+ "seconds": 45.47,
+ "response": {
+  "model": "qwen2.5-coder:14b",
+  "created_at": "2026-09-15T00:19:31.761601Z",
+  "message": {
+   "role": "assistant",
+   "content": "\"Keep replies short.\" DONE-7"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 45443602750,
+  "load_duration": 181245000,
+  "prompt_eval_count": 4096,
+  "prompt_eval_duration": 44023229208,
+  "eval_count": 9,
+  "eval_duration": 1075424498
+ }
+}

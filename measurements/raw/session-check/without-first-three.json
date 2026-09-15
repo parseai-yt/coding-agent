@@ -1,0 +1,59 @@
+{
+ "request": {
+  "endpoint": "/api/chat",
+  "num_ctx": 32768,
+  "num_predict": 1,
+  "messages": [
+   {
+    "role": "system",
+    "chars": 35051
+   },
+   {
+    "role": "assistant",
+    "chars": 0
+   },
+   {
+    "role": "tool",
+    "chars": 11777
+   },
+   {
+    "role": "assistant",
+    "chars": 0
+   },
+   {
+    "role": "tool",
+    "chars": 11797
+   },
+   {
+    "role": "assistant",
+    "chars": 41
+   },
+   {
+    "role": "user",
+    "chars": 19
+   }
+  ]
+ },
+ "http_status": 200,
+ "seconds": 229.65,
+ "response": {
+  "model": "qwen2.5-coder:14b",
+  "created_at": "2026-09-15T00:47:16.612903Z",
+  "message": {
+   "role": "assistant",
+   "content": "``"
+  },
+  "done": true,
+  "done_reason": "length",
+  "total_duration": 229575093417,
+  "load_duration": 3513672958,
+  "prompt_eval_count": 14813,
+  "prompt_eval_duration": 225903842374,
+  "eval_count": 1
+ },
+ "removed": [
+  "user: bug report",
+  "assistant: read_file dates.py",
+  "tool: dates.py"
+ ]
+}

@@ -1,0 +1,56 @@
+{
+ "request": {
+  "endpoint": "/api/chat",
+  "num_ctx": 16384,
+  "num_predict": 60,
+  "messages": [
+   {
+    "role": "system",
+    "chars": 35051
+   },
+   {
+    "role": "user",
+    "chars": 26
+   }
+  ]
+ },
+ "http_status": 200,
+ "seconds": 171.94,
+ "response": {
+  "model": "qwen2.5-coder:14b",
+  "created_at": "2026-09-15T00:15:49.223941Z",
+  "message": {
+   "role": "assistant",
+   "content": "Hello! DONE-7"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 171935886959,
+  "load_duration": 2911321042,
+  "prompt_eval_count": 8476,
+  "prompt_eval_duration": 167560220538,
+  "eval_count": 6,
+  "eval_duration": 1366398333
+ },
+ "ps": [
+  {
+   "name": "qwen2.5-coder:14b",
+   "model": "qwen2.5-coder:14b",
+   "size": 13162129408,
+   "digest": "9ec8897f747e246e970bc5cfdda85d22f1123dc2e3d34978a010a75968716849",
+   "details": {
+    "parent_model": "",
+    "format": "gguf",
+    "family": "qwen2",
+    "families": [
+     "qwen2"
+    ],
+    "parameter_size": "14.8B",
+    "quantization_level": "Q4_K_M"
+   },
+   "expires_at": "2026-09-15T05:50:49.224268+05:30",
+   "size_vram": 13162129408,
+   "context_length": 16384
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "request": {
+  "endpoint": "/api/chat",
+  "num_ctx": 4096,
+  "num_predict": 80,
+  "messages": [
+   {
+    "role": "system",
+    "chars": 35051
+   },
+   {
+    "role": "user",
+    "chars": 66
+   }
+  ]
+ },
+ "http_status": 200,
+ "seconds": 39.72,
+ "response": {
+  "model": "qwen2.5-coder:14b",
+  "created_at": "2026-09-15T00:22:22.151751Z",
+  "message": {
+   "role": "assistant",
+   "content": "\"Always communicate clearly and concisely.\" DONE-7"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 39715041667,
+  "load_duration": 156482709,
+  "prompt_eval_count": 4096,
+  "prompt_eval_duration": 37960669666,
+  "eval_count": 13,
+  "eval_duration": 1478273751
+ }
+}

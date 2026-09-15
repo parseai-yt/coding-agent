@@ -1,0 +1,67 @@
+{
+ "request": {
+  "endpoint": "/api/chat",
+  "num_ctx": 16384,
+  "num_predict": 200,
+  "messages": [
+   {
+    "role": "system",
+    "chars": 35051
+   },
+   {
+    "role": "user",
+    "chars": 123
+   },
+   {
+    "role": "assistant",
+    "chars": 0
+   },
+   {
+    "role": "tool",
+    "chars": 11976
+   },
+   {
+    "role": "assistant",
+    "chars": 0
+   },
+   {
+    "role": "tool",
+    "chars": 11777
+   },
+   {
+    "role": "assistant",
+    "chars": 0
+   },
+   {
+    "role": "tool",
+    "chars": 11797
+   },
+   {
+    "role": "assistant",
+    "chars": 41
+   },
+   {
+    "role": "user",
+    "chars": 19
+   }
+  ]
+ },
+ "http_status": 200,
+ "seconds": 25.78,
+ "response": {
+  "model": "qwen2.5-coder:14b",
+  "created_at": "2026-09-15T00:34:23.544168Z",
+  "message": {
+   "role": "assistant",
+   "content": "```json\n{\n  \"name\": \"edit_file\",\n  \"arguments\": {\n    \"path\": \"ledgerline/parsing.py\",\n    \"old\": \"round_batch_1(items: list[dict], cutoff: datetime) -> list[dict]:\",\n    \"new\": \"round_batch_1(items: list[dict], cutoff: datetime) -> list[dict]:\\n    \\\"\\\"\\\"Round each batch before the cutoff. Amounts are Decimal, times are UTC.\\\"\\\"\\\"\\n    result = []\\n    for item in items:\\n        when = item['at'].astimezone(timezone.utc)\\n        if when >= cutoff:\\n            continue\\n        amount = Decimal(item['amount']).quantize(Decimal('0.01'))\\n        result.append({**item, 'amount': amount, 'batch_step': 1})\\n    return result\"\n  }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 25779101709,
+  "load_duration": 132750875,
+  "prompt_eval_count": 14813,
+  "prompt_eval_duration": 90718542,
+  "eval_count": 190,
+  "eval_duration": 24758027295
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "request": {
+  "endpoint": "/api/chat",
+  "num_ctx": 4096,
+  "num_predict": 80,
+  "messages": [
+   {
+    "role": "system",
+    "chars": 35051
+   },
+   {
+    "role": "user",
+    "chars": 66
+   }
+  ]
+ },
+ "http_status": 200,
+ "seconds": 42.95,
+ "response": {
+  "model": "qwen2.5-coder:14b",
+  "created_at": "2026-09-15T00:21:00.896675Z",
+  "message": {
+   "role": "assistant",
+   "content": "> Avoid unnecessary complexity and strive for simplicity in all interactions.\n\nDONE-7"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 42915943583,
+  "load_duration": 168304583,
+  "prompt_eval_count": 4096,
+  "prompt_eval_duration": 40723772082,
+  "eval_count": 16,
+  "eval_duration": 1856657373
+ }
+}

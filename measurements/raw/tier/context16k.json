@@ -1,0 +1,55 @@
+{
+ "request": {
+  "endpoint": "/v1/chat/completions",
+  "num_ctx": "not sent, the OpenAI format has no such field"
+ },
+ "http_status": 200,
+ "seconds": 111.13,
+ "response": {
+  "id": "chatcmpl-363",
+  "object": "chat.completion",
+  "created": 1789433003,
+  "model": "qwen2.5-coder:14b",
+  "system_fingerprint": "fp_ollama",
+  "choices": [
+   {
+    "index": 0,
+    "message": {
+     "role": "assistant",
+     "content": "Hello! DONE-7"
+    },
+    "finish_reason": "stop"
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 8476,
+   "completion_tokens": 6,
+   "total_tokens": 8482
+  }
+ },
+ "env": {
+  "OLLAMA_GPU_OVERHEAD": "6442450944",
+  "OLLAMA_CONTEXT_LENGTH": "16384"
+ },
+ "ps": [
+  {
+   "name": "qwen2.5-coder:14b",
+   "model": "qwen2.5-coder:14b",
+   "size": 13162129408,
+   "digest": "9ec8897f747e246e970bc5cfdda85d22f1123dc2e3d34978a010a75968716849",
+   "details": {
+    "parent_model": "",
+    "format": "gguf",
+    "family": "qwen2",
+    "families": [
+     "qwen2"
+    ],
+    "parameter_size": "14.8B",
+    "quantization_level": "Q4_K_M"
+   },
+   "expires_at": "2026-09-15T06:18:23.636276+05:30",
+   "size_vram": 13162129408,
+   "context_length": 16384
+  }
+ ]
+}

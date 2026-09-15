@@ -1,0 +1,35 @@
+{
+ "request": {
+  "endpoint": "/api/chat",
+  "num_ctx": 4096,
+  "num_predict": 80,
+  "messages": [
+   {
+    "role": "system",
+    "chars": 35051
+   },
+   {
+    "role": "user",
+    "chars": 66
+   }
+  ]
+ },
+ "http_status": 200,
+ "seconds": 40.75,
+ "response": {
+  "model": "qwen2.5-coder:14b",
+  "created_at": "2026-09-15T00:23:02.899232Z",
+  "message": {
+   "role": "assistant",
+   "content": "\"Never add or remove a rule without at least two days of discussion and consensus among all participants.\" DONE-7"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 40741264792,
+  "load_duration": 162909167,
+  "prompt_eval_count": 4096,
+  "prompt_eval_duration": 37693000583,
+  "eval_count": 24,
+  "eval_duration": 2701066710
+ }
+}

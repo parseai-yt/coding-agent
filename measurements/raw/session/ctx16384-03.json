@@ -1,0 +1,67 @@
+{
+ "request": {
+  "endpoint": "/api/chat",
+  "num_ctx": 16384,
+  "num_predict": 200,
+  "messages": [
+   {
+    "role": "system",
+    "chars": 35051
+   },
+   {
+    "role": "user",
+    "chars": 123
+   },
+   {
+    "role": "assistant",
+    "chars": 0
+   },
+   {
+    "role": "tool",
+    "chars": 11976
+   },
+   {
+    "role": "assistant",
+    "chars": 0
+   },
+   {
+    "role": "tool",
+    "chars": 11777
+   },
+   {
+    "role": "assistant",
+    "chars": 0
+   },
+   {
+    "role": "tool",
+    "chars": 11797
+   },
+   {
+    "role": "assistant",
+    "chars": 41
+   },
+   {
+    "role": "user",
+    "chars": 19
+   }
+  ]
+ },
+ "http_status": 200,
+ "seconds": 1.34,
+ "response": {
+  "model": "qwen2.5-coder:14b",
+  "created_at": "2026-09-15T00:32:20.157844Z",
+  "message": {
+   "role": "assistant",
+   "content": "Done-7"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1340708458,
+  "load_duration": 151973542,
+  "prompt_eval_count": 14813,
+  "prompt_eval_duration": 125379542,
+  "eval_count": 4,
+  "eval_duration": 617132791
+ }
+}

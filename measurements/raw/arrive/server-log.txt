@@ -1,0 +1,2 @@
+time=2026-09-15T05:40:56.437+05:30 level=WARN source=runner.go:153 msg="truncating input prompt" limit=4096 prompt=8476 keep=4 new=4096
+time=2026-09-15T05:41:33.019+05:30 level=WARN source=runner.go:153 msg="truncating input prompt" limit=8192 prompt=8476 keep=4 new=8192

@@ -1,0 +1,67 @@
+{
+ "request": {
+  "endpoint": "/api/chat",
+  "num_ctx": 32768,
+  "num_predict": 200,
+  "messages": [
+   {
+    "role": "system",
+    "chars": 35051
+   },
+   {
+    "role": "user",
+    "chars": 123
+   },
+   {
+    "role": "assistant",
+    "chars": 0
+   },
+   {
+    "role": "tool",
+    "chars": 11976
+   },
+   {
+    "role": "assistant",
+    "chars": 0
+   },
+   {
+    "role": "tool",
+    "chars": 11777
+   },
+   {
+    "role": "assistant",
+    "chars": 0
+   },
+   {
+    "role": "tool",
+    "chars": 11797
+   },
+   {
+    "role": "assistant",
+    "chars": 41
+   },
+   {
+    "role": "user",
+    "chars": 19
+   }
+  ]
+ },
+ "http_status": 200,
+ "seconds": 228.63,
+ "response": {
+  "model": "qwen2.5-coder:14b",
+  "created_at": "2026-09-15T00:38:12.174642Z",
+  "message": {
+   "role": "assistant",
+   "content": "Sure, applying the fix."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 228618403667,
+  "load_duration": 2983109625,
+  "prompt_eval_count": 17932,
+  "prompt_eval_duration": 224185666122,
+  "eval_count": 7,
+  "eval_duration": 1297168625
+ }
+}

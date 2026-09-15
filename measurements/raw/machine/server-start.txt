@@ -1,0 +1,6 @@
+time=2026-09-13T20:26:41.088+05:30 level=INFO source=routes.go:1852 msg="vram-based default context" total_vram="28.1 GiB" default_num_ctx=32768
+time=2026-09-12T10:50:52.926+05:30 level=INFO source=routes.go:1852 msg="vram-based default context" total_vram="28.1 GiB" default_num_ctx=32768
+time=2026-09-11T11:48:32.704+05:30 level=INFO source=routes.go:1852 msg="vram-based default context" total_vram="28.1 GiB" default_num_ctx=32768
+time=2026-09-09T07:27:46.571+05:30 level=INFO source=routes.go:1852 msg="vram-based default context" total_vram="28.1 GiB" default_num_ctx=32768
+time=2026-09-08T15:59:13.749+05:30 level=INFO source=routes.go:1852 msg="vram-based default context" total_vram="28.1 GiB" default_num_ctx=32768
+time=2026-09-14T23:25:41.038+05:30 level=INFO source=routes.go:1852 msg="vram-based default context" total_vram="28.1 GiB" default_num_ctx=32768

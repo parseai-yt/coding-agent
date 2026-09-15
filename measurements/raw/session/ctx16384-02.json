@@ -1,0 +1,67 @@
+{
+ "request": {
+  "endpoint": "/api/chat",
+  "num_ctx": 16384,
+  "num_predict": 200,
+  "messages": [
+   {
+    "role": "system",
+    "chars": 35051
+   },
+   {
+    "role": "user",
+    "chars": 123
+   },
+   {
+    "role": "assistant",
+    "chars": 0
+   },
+   {
+    "role": "tool",
+    "chars": 11976
+   },
+   {
+    "role": "assistant",
+    "chars": 0
+   },
+   {
+    "role": "tool",
+    "chars": 11777
+   },
+   {
+    "role": "assistant",
+    "chars": 0
+   },
+   {
+    "role": "tool",
+    "chars": 11797
+   },
+   {
+    "role": "assistant",
+    "chars": 41
+   },
+   {
+    "role": "user",
+    "chars": 19
+   }
+  ]
+ },
+ "http_status": 200,
+ "seconds": 36.22,
+ "response": {
+  "model": "qwen2.5-coder:14b",
+  "created_at": "2026-09-15T00:32:18.809692Z",
+  "message": {
+   "role": "assistant",
+   "content": "Sure, let's proceed with applying the fix.\n\n1. **Fixing the duplicate functions in `ledgerline/statements.py`:**\n   - Remove the duplicate functions and combine them as needed to ensure each function has a unique purpose.\n\n2. **Ensuring functions are under 40 lines:**\n   - Check if any function exceeds 40 lines and split them accordingly.\n\n3. **Run tests after making changes:**\n   - After applying the fixes, run the relevant tests to ensure everything works as expected.\n\nLet's start by identifying and fixing the duplicate functions in `ledgerline/statements.py`.\n\n### Step 1: Identify Duplicate Functions\n\nFrom the provided content of `ledgerline/statements.py`, I identified the following duplicates:\n\n- `merge_entry_10` and `merge_entry_11`\n- `shift_payout_18` and `shift_payout_19`\n\nThese functions are identical and can be merged into a single function.\n\n### Step "
+  },
+  "done": true,
+  "done_reason": "length",
+  "total_duration": 36213110333,
+  "load_duration": 182230417,
+  "prompt_eval_count": 14813,
+  "prompt_eval_duration": 65212042,
+  "eval_count": 200,
+  "eval_duration": 35064258167
+ }
+}

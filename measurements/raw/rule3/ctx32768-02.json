@@ -1,0 +1,35 @@
+{
+ "request": {
+  "endpoint": "/api/chat",
+  "num_ctx": 32768,
+  "num_predict": 80,
+  "messages": [
+   {
+    "role": "system",
+    "chars": 35051
+   },
+   {
+    "role": "user",
+    "chars": 66
+   }
+  ]
+ },
+ "http_status": 200,
+ "seconds": 4.64,
+ "response": {
+  "model": "qwen2.5-coder:14b",
+  "created_at": "2026-09-15T00:26:54.839368Z",
+  "message": {
+   "role": "assistant",
+   "content": "Rule 3. Read a file before you edit it, and never read the same file twice in one session.\n\nDONE-7"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 4636426916,
+  "load_duration": 148439083,
+  "prompt_eval_count": 8486,
+  "prompt_eval_duration": 72730625,
+  "eval_count": 27,
+  "eval_duration": 4299191084
+ }
+}

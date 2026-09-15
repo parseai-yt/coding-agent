@@ -1,0 +1,10 @@
+time=2026-09-15T05:47:59.853+05:30 level=WARN source=runner.go:153 msg="truncating input prompt" limit=4096 prompt=8486 keep=4 new=4096
+time=2026-09-15T05:48:46.618+05:30 level=WARN source=runner.go:153 msg="truncating input prompt" limit=4096 prompt=8486 keep=4 new=4096
+time=2026-09-15T05:49:32.086+05:30 level=WARN source=runner.go:153 msg="truncating input prompt" limit=4096 prompt=8486 keep=4 new=4096
+time=2026-09-15T05:50:18.277+05:30 level=WARN source=runner.go:153 msg="truncating input prompt" limit=4096 prompt=8486 keep=4 new=4096
+time=2026-09-15T05:51:01.203+05:30 level=WARN source=runner.go:153 msg="truncating input prompt" limit=4096 prompt=8486 keep=4 new=4096
+time=2026-09-15T05:51:42.682+05:30 level=WARN source=runner.go:153 msg="truncating input prompt" limit=4096 prompt=8486 keep=4 new=4096
+time=2026-09-15T05:52:22.433+05:30 level=WARN source=runner.go:153 msg="truncating input prompt" limit=4096 prompt=8486 keep=4 new=4096
+time=2026-09-15T05:53:03.200+05:30 level=WARN source=runner.go:153 msg="truncating input prompt" limit=4096 prompt=8486 keep=4 new=4096
+time=2026-09-15T05:53:47.875+05:30 level=WARN source=runner.go:153 msg="truncating input prompt" limit=4096 prompt=8486 keep=4 new=4096
+time=2026-09-15T05:54:29.676+05:30 level=WARN source=runner.go:153 msg="truncating input prompt" limit=4096 prompt=8486 keep=4 new=4096

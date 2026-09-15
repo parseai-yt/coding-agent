@@ -1,0 +1,50 @@
+arrive ...
+  arrive   4096  prompt_eval_count   4096  size 9.05 GiB
+  arrive   8192  prompt_eval_count   8192  size 10.12 GiB
+  arrive  16384  prompt_eval_count   8476  size 12.26 GiB
+  arrive  32768  prompt_eval_count   8476  size 16.54 GiB
+rule3 ...
+  rule3   4096 #01  '"Every message must be a question." DONE-7'
+  rule3   4096 #02  '"Keep replies short." DONE-7'
+  rule3   4096 #03  '"Rule 3: When you receive a task that requires an answer, respond concisely and clearly." '
+  rule3   4096 #04  '> Avoid unnecessary complexity and strive for simplicity in all interactions.\n\nDONE-7'
+  rule3   4096 #05  '"Never let an uncorrected error pass by, so that it can be duplicated." DONE-7'
+  rule3   4096 #06  '"Always communicate clearly and concisely." DONE-7'
+  rule3   4096 #07  '"Never add or remove a rule without at least two days of discussion and consensus among al'
+  rule3   4096 #08  'All interactions must be kept strictly professional and respectful at all times. This incl'
+  rule3   4096 #09  '"Never take sides or form personal opinions." DONE-7'
+  rule3   4096 #10  '```plaintext\nRule 3: Keep responses concise and to the point.\n```'
+  rule3  32768 #01  'Read a file before you edit it, and never read the same file twice in one session. DONE-7'
+  rule3  32768 #02  'Rule 3. Read a file before you edit it, and never read the same file twice in one session.'
+  rule3  32768 #03  'Rule 3. Read a file before you edit it, and never read the same file twice in one session.'
+  rule3  32768 #04  'Rule 3. Read a file before you edit it, and never read the same file twice in one session.'
+  rule3  32768 #05  'Rule 3. Read a file before you edit it, and never read the same file twice in one session.'
+  rule3  32768 #06  'Rule 3. Read a file before you edit it, and never read the same file twice in one session.'
+  rule3  32768 #07  'Rule 3. Read a file before you edit it, and never read the same file twice in one session.'
+  rule3  32768 #08  'Rule 3. Read a file before you edit it, and never read the same file twice in one session.'
+  rule3  32768 #09  'Read a file before you edit it, and never read the same file twice in one session.\n\nDONE-7'
+  rule3  32768 #10  'Rule 3. Read a file before you edit it, and never read the same file twice in one session.'
+session ...
+  session  16384 #01  pec 14813  '```json\n{"name": "edit_file", "arguments": {"path":"ledgerline/parsing.py", "old":"def rou'
+  session  16384 #02  pec 14813  "Sure, let's proceed with applying the fix.\n\n1. **Fixing the duplicate functions in `ledger"
+  session  16384 #03  pec 14813  'Done-7'
+  session  16384 #04  pec 14813  '```json\n{"name": "edit_file", "arguments": {"path":"ledgerline/parsing.py", "old":"def rou'
+  session  16384 #05  pec 14813  '```json\n{"name": "edit_file", "arguments": {"path":"ledgerline/parsing.py", "old":"return '
+  session  16384 #06  pec 14813  '{"name": "edit_file", "arguments": {"path":"ledgerline/parsing.py", "old":"def round_batch'
+  session  16384 #07  pec 14813  '```json\n{"name": "edit_file", "arguments": {"path":"ledgerline/parsing.py", "old": "result'
+  session  16384 #08  pec 14813  '```json\n{"name": "edit_file", "arguments": {"path":"ledgerline/parsing.py", "old":"amount '
+  session  16384 #09  pec 14813  '{"name": "edit_file", "arguments": {"path":"ledgerline/parsing.py", "old":"result.append({'
+  session  16384 #10  pec 14813  '```json\n{\n  "name": "edit_file",\n  "arguments": {\n    "path": "ledgerline/parsing.py",\n   '
+  session  32768 #01  pec 17932  'Sure, applying the fix.'
+  session  32768 #02  pec 17932  'Sure, applying the fix.\n\n```json\n{"name": "edit_file", "arguments": {"path":"ledgerline/da'
+  session  32768 #03  pec 17932  'Sure, let\'s fix it.\n\n```json\n{\n    "name": "edit_file",\n    "arguments": {\n        "path":'
+  session  32768 #04  pec 17932  '```json\n{\n  "name": "edit_file",\n  "arguments": {\n    "path": "ledgerline/dates.py",\n    "'
+  session  32768 #05  pec 17932  'Done.\n\n{"name": "edit_file", "arguments": {"path":"ledgerline/dates.py", "old":"return d.m'
+  session  32768 #06  pec 17932  'Sure, fixing the `month_index` function.\n\n```json\n{"name": "edit_file", "arguments": {"pat'
+  session  32768 #07  pec 17932  'Sure.\n\n```json\n{\n  "name": "edit_file",\n  "arguments": {\n    "path": "ledgerline/dates.py"'
+  session  32768 #08  pec 17932  'Sure, applying the fix now.\n\n```json\n{"name": "edit_file", "arguments": {"path":"ledgerlin'
+  session  32768 #09  pec 17932  'Sure, here\'s the fix:\n\n```json\n{"name": "edit_file", "arguments": {"path":"ledgerline/date'
+  session  32768 #10  pec 17932  '```json\n{"name": "edit_file", "arguments": {"path":"ledgerline/dates.py", "old":"return d.'
+tier ...
+  tier default     prompt_tokens 4096
+  tier context16k  prompt_tokens 8476

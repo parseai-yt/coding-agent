@@ -1,0 +1,65 @@
+[
+ {
+  "type": "function",
+  "function": {
+   "name": "read_file",
+   "description": "Read a file from the repository.",
+   "parameters": {
+    "type": "object",
+    "required": [
+     "path"
+    ],
+    "properties": {
+     "path": {
+      "type": "string",
+      "description": "Path from the repo root"
+     }
+    }
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "edit_file",
+   "description": "Replace one exact string in a file.",
+   "parameters": {
+    "type": "object",
+    "required": [
+     "path",
+     "old",
+     "new"
+    ],
+    "properties": {
+     "path": {
+      "type": "string"
+     },
+     "old": {
+      "type": "string"
+     },
+     "new": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "run_tests",
+   "description": "Run the test suite for one package.",
+   "parameters": {
+    "type": "object",
+    "required": [
+     "package"
+    ],
+    "properties": {
+     "package": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ }
+]

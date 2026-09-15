@@ -1,0 +1,67 @@
+{
+ "request": {
+  "endpoint": "/api/chat",
+  "num_ctx": 16384,
+  "num_predict": 200,
+  "messages": [
+   {
+    "role": "system",
+    "chars": 35051
+   },
+   {
+    "role": "user",
+    "chars": 123
+   },
+   {
+    "role": "assistant",
+    "chars": 0
+   },
+   {
+    "role": "tool",
+    "chars": 11976
+   },
+   {
+    "role": "assistant",
+    "chars": 0
+   },
+   {
+    "role": "tool",
+    "chars": 11777
+   },
+   {
+    "role": "assistant",
+    "chars": 0
+   },
+   {
+    "role": "tool",
+    "chars": 11797
+   },
+   {
+    "role": "assistant",
+    "chars": 41
+   },
+   {
+    "role": "user",
+    "chars": 19
+   }
+  ]
+ },
+ "http_status": 200,
+ "seconds": 10.33,
+ "response": {
+  "model": "qwen2.5-coder:14b",
+  "created_at": "2026-09-15T00:33:39.584206Z",
+  "message": {
+   "role": "assistant",
+   "content": "```json\n{\"name\": \"edit_file\", \"arguments\": {\"path\":\"ledgerline/parsing.py\", \"old\":\"amount = Decimal(item[\"amount\"]).quantize(Decimal(\"0.01\"))\", \"new\":\"amount = Decimal(item['amount']).quantize(Decimal('0.01'))\"}}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 10319557083,
+  "load_duration": 143865292,
+  "prompt_eval_count": 14813,
+  "prompt_eval_duration": 92932209,
+  "eval_count": 66,
+  "eval_duration": 9506350003
+ }
+}

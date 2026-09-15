@@ -1,0 +1,35 @@
+{
+ "request": {
+  "endpoint": "/api/chat",
+  "num_ctx": 4096,
+  "num_predict": 80,
+  "messages": [
+   {
+    "role": "system",
+    "chars": 35051
+   },
+   {
+    "role": "user",
+    "chars": 66
+   }
+  ]
+ },
+ "http_status": 200,
+ "seconds": 39.84,
+ "response": {
+  "model": "qwen2.5-coder:14b",
+  "created_at": "2026-09-15T00:25:09.269294Z",
+  "message": {
+   "role": "assistant",
+   "content": "```plaintext\nRule 3: Keep responses concise and to the point.\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 39831041417,
+  "load_duration": 133810000,
+  "prompt_eval_count": 4096,
+  "prompt_eval_duration": 37512257875,
+  "eval_count": 17,
+  "eval_duration": 2042884585
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "request": {
+  "endpoint": "/api/chat",
+  "num_ctx": 32768,
+  "num_predict": 200,
+  "messages": [
+   {
+    "role": "system",
+    "chars": 35051
+   },
+   {
+    "role": "user",
+    "chars": 123
+   },
+   {
+    "role": "assistant",
+    "chars": 0
+   },
+   {
+    "role": "tool",
+    "chars": 11976
+   },
+   {
+    "role": "assistant",
+    "chars": 0
+   },
+   {
+    "role": "tool",
+    "chars": 11777
+   },
+   {
+    "role": "assistant",
+    "chars": 0
+   },
+   {
+    "role": "tool",
+    "chars": 11797
+   },
+   {
+    "role": "assistant",
+    "chars": 41
+   },
+   {
+    "role": "user",
+    "chars": 19
+   }
+  ]
+ },
+ "http_status": 200,
+ "seconds": 11.08,
+ "response": {
+  "model": "qwen2.5-coder:14b",
+  "created_at": "2026-09-15T00:39:04.000702Z",
+  "message": {
+   "role": "assistant",
+   "content": "```json\n{\n  \"name\": \"edit_file\",\n  \"arguments\": {\n    \"path\": \"ledgerline/dates.py\",\n    \"old\": \"return d.month\",\n    \"new\": \"return d.month - 1\"\n  }\n}\n```"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 11072430209,
+  "load_duration": 135630084,
+  "prompt_eval_count": 17932,
+  "prompt_eval_duration": 68412417,
+  "eval_count": 54,
+  "eval_duration": 10635566417
+ }
+}

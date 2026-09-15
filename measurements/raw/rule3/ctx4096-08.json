@@ -1,0 +1,35 @@
+{
+ "request": {
+  "endpoint": "/api/chat",
+  "num_ctx": 4096,
+  "num_predict": 80,
+  "messages": [
+   {
+    "role": "system",
+    "chars": 35051
+   },
+   {
+    "role": "user",
+    "chars": 66
+   }
+  ]
+ },
+ "http_status": 200,
+ "seconds": 44.69,
+ "response": {
+  "model": "qwen2.5-coder:14b",
+  "created_at": "2026-09-15T00:23:47.597495Z",
+  "message": {
+   "role": "assistant",
+   "content": "All interactions must be kept strictly professional and respectful at all times. This includes avoiding any form of harassment, discrimination, or inappropriate behavior towards others. DONE-7"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 44690353625,
+  "load_duration": 158802666,
+  "prompt_eval_count": 4096,
+  "prompt_eval_duration": 40417861917,
+  "eval_count": 33,
+  "eval_duration": 3878263457
+ }
+}

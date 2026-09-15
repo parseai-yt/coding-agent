@@ -1,0 +1,67 @@
+{
+ "request": {
+  "endpoint": "/api/chat",
+  "num_ctx": 32768,
+  "num_predict": 200,
+  "messages": [
+   {
+    "role": "system",
+    "chars": 35051
+   },
+   {
+    "role": "user",
+    "chars": 123
+   },
+   {
+    "role": "assistant",
+    "chars": 0
+   },
+   {
+    "role": "tool",
+    "chars": 11976
+   },
+   {
+    "role": "assistant",
+    "chars": 0
+   },
+   {
+    "role": "tool",
+    "chars": 11777
+   },
+   {
+    "role": "assistant",
+    "chars": 0
+   },
+   {
+    "role": "tool",
+    "chars": 11797
+   },
+   {
+    "role": "assistant",
+    "chars": 41
+   },
+   {
+    "role": "user",
+    "chars": 19
+   }
+  ]
+ },
+ "http_status": 200,
+ "seconds": 15.94,
+ "response": {
+  "model": "qwen2.5-coder:14b",
+  "created_at": "2026-09-15T00:39:57.403197Z",
+  "message": {
+   "role": "assistant",
+   "content": "Sure, applying the fix now.\n\n```json\n{\"name\": \"edit_file\", \"arguments\": {\"path\":\"ledgerline/dates.py\", \"old\":\"return d.month\", \"new\":\"return d.month - 1\"}}\n```\n\nRunning tests...\n\n```json\n{\"name\": \"run_tests\", \"arguments\": {\"package\":\"dates\"}}\n```\n\nDONE-7"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 15932582333,
+  "load_duration": 162474708,
+  "prompt_eval_count": 17932,
+  "prompt_eval_duration": 122467125,
+  "eval_count": 75,
+  "eval_duration": 15323163251
+ }
+}
